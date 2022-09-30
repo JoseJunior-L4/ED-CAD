@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ED-CAD</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="myNav border-bottom fixed-top">
+        <div class="nav-header">
+            <a class="navbar-brand" href="#">
+                ED-CAD
+            </a>
+
+            <form class="nav-search" style="margin: 0;">
+                <div class="flex justify-center">
+                    <div class="font-sans text-black bg-white flex items-center justify-center">
+                        <div class="border rounded overflow-hidden flex">
+                          <input type="text" class="px-4 py-2" placeholder="Search...">
+                          <button class="flex items-center justify-center px-4 border-l">
+                            <svg class="h-4 w-4 text-grey-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+            </form>
+            
+        </div>
+ 
+        <div class="nav-items burguer">
+            <div class="nav-item">
+                <button class="btn btn-info"><i class="fa-solid fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+
+        <div class="nav-items">
+            
+            <a href="#" class="nav-item active">
+                <i class="fa-regular fa-address-book"></i> Posts
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-address-book"></i> Grades
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-calendar-days"></i>Schedule
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-file-lines"></i>Assignments
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-building"></i>Comunities
+            </a>
+        </div>
+    </nav>
+
+
+
+    <main style="margin-top: 6rem;">
+        <div class="classes">
+            
+            <div class="post">
+                <div class="post-items">
+                    <a href="#" class="post-item">
+                        <i class="fa-solid fa-home"></i>
+                        <span>House</span>
+                    </a>
+
+                    <a href="#" class="post-item">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Favourites</span>
+                    </a>
+
+                    <a href="#" class="post-item">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span>Bookmarks</span>
+                        <hr style="margin-top: 1.5rem">
+                    </a>
+
+                    <a href="#" class="post-item">
+                       <b>Current Courses</b> <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+
+                    <!-- COURSE ITEM START -->
+                    <a href="#" class="row" style="padding: 0;margin:1rem 0; text-decoration: none !important;">
+                        
+                        <div class="post-user">
+                            <img src="/assets/img/louis-hansel.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="post-user-name">Networking</div>
+                            <div class="post-user-date">
+                                <i class="material-icons" style="font-size: 1rem;">vpn_key</i>
+                                <span>NT2021AB</span>
+                            </div>
+                        </div>
+                        <div class="course-tag">
+                            1
+                        </div>
+                        
+                    </a>
+                    <!-- COURSE ITEM END -->
+
+                     <!-- COURSE ITEM START -->
+                     <a href="#" class="row" style="padding: 0;margin:0; text-decoration: none !important;">
+                        
+                        <div class="post-user">
+                            <img src="/assets/img/louis-hansel.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="post-user-name">Object Oriented Programming</div>
+                            <div class="post-user-date">
+                                <i class="material-icons" style="font-size: 1rem;">vpn_key</i>
+                                <span>OOP2021BY</span>
+                            </div>
+                        </div>
+                        <div class="course-tag">
+                            4
+                        </div>
+                        
+                    </a>
+                    <!-- COURSE ITEM END -->
+
+                    
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="posts">
+            
+
+
+            <div class="post">
+                <div class="post-title">Meeting Rescheduling</div>
+
+                <div class="row" style="padding: 0 auto;margin:0 auto">
+                    <div class="post-user">
+                        <img src="/assets/img/louis-hansel.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="post-user-name">Louis Hansel</div>
+                        <div class="post-user-date">
+                            <span>6h ago.</span>
+                        </div>
+                    </div>
+                    <a href="#" class="tag">
+                        Gestão Empresarial
+                    </a>
+                </div>
+
+                <div class="post-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec euismod, nisl eget consectetur sagittis,
+                        nisl nisi consectetur nisi, euismod eget nisl nisi
+                        consectetur nisi.
+                    </p>
+
+                    <div class="post-image" style="background-image: url(./assets/img/vienna.jpeg);">
+                        
+                    </div>
+
+                </div>
+
+                <div class="post-footer">
+                    <div class="post-footer-items">
+                        <div class="post-footer-item">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>0</span>
+                        </div>
+                        <div class="post-footer-item">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>0</span>
+                        </div>
+                        <div class="post-footer-item">
+                            <i class="fa-solid fa-share-nodes" style="margin-right: 5px;"></i>
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <p><a href="#"><b>Issac Newton</b></a> liked this post.</p>
+                </div>  
+                <hr>
+                <div class="row" id="post-chat" style="padding: 0 auto;margin:0 auto;">
+                    <div class="post-user">
+                        <img src="/assets/img/louis-hansel.jpg" alt="">
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="" placeholder="Escreve o seu comentario">
+                        <!-- icon button -->
+                        <button class="send-btn">
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+
+                
+
+
+                
+            
+        </div>
+
+        <div class="people">
+            People
+        </div>
+    </main>
+
+
+
+  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
