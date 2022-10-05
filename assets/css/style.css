@@ -4,7 +4,7 @@
     padding: 5px;
     font-size: 1.2rem;
     color: #404040;
-    
+    transition: 150ms all;
 }
 .post-items{
     display: flex;
@@ -16,7 +16,7 @@
     padding: 0px;
     font-size: 12px;
     background-color: #EAEDF2;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     --main-color: #007bff;
     --main-text-color: #001A45;
     
@@ -98,6 +98,7 @@ justify-content: space-between;
 }
 .posts{
     grid-area: posts;
+    border-right: 1px solid #ccc;
 }
 .people{
     grid-area: people;
@@ -152,6 +153,8 @@ justify-content: space-between;
     
 
 }
+
+
 
 .post .col{
     display: flex;
@@ -242,8 +245,14 @@ justify-content: space-between;
     min-height: 30rem; 
 }
 
+.mobileOptions{
+    display: none;
+    padding-top: 5rem;
+    background-color: white;
+}
+
 /* For mobile devices 800px*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     
     .chat-input{
         width: fit-content;
@@ -257,7 +266,9 @@ justify-content: space-between;
         justify-content: space-around;
     }
 
-     
+     .myNav{
+        height: 4rem;
+     }
 
     .chat-input input{
         margin-right: 2rem;
@@ -285,13 +296,17 @@ justify-content: space-between;
 
 /* For Desktop devices */
 @media only screen and (min-width: 800px) {
-    .burguer{
+    .burguer, .mobileOptions{
         display: none ;
     }
 
 }
 
-
+.post-item:hover{
+    border-radius: 25px; 
+    background-color:#DFDBE5; 
+    padding:8px;
+}
 
 
 
